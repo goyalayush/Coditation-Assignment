@@ -15,7 +15,7 @@ simultaneously, and the discrete moment at which this happens is called a tick. 
 generation is a pure function of the one before.)
 
 This is a program in Cpp(C plus plus) with following guidelines:
-1. Accepts a user input of new cells (max 100 at every step/tick) to be placed; each cell should have a unique name which is to be accepted by the user. This input is accepted through a CLI.
+1. Accepts a user input of new cells (max 100 at every step/tick) to be placed; each cell should have unique coordinates which is to be input by the user. This input is accepted through a CLI.
 2. Then the program calculate the state of every cell.
 3. The program output the state of the cells and changes (0 for Dead and 1 for Alive).
 4. The program provides a way to search by the coordinates of the cell and show the current state of the cell.
