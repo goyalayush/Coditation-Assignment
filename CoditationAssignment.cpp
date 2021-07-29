@@ -17,6 +17,7 @@ class liveOrDead {
 		vector<pair<pair<int,int>, int>> changes;
 		
 	public:
+		//Constructor to initialize values properly.
 		liveOrDead() {
 			x_coordinate = 0;
 			y_coordinate = 0;
@@ -30,14 +31,17 @@ class liveOrDead {
 			}
 		}
 		
+		//Updating the matrix with new Values entered by user.
 		void update_OrthogonalMatrix(int x_coordinate, int y_coordinate, int newValue) {
 			orthogonal_grid[x_coordinate][y_coordinate] = newValue;
 		}
 		
+		//Checking if Coordinates are not going out of bound.
 		bool isValid(int rVal, int cVal, int row, int col) {
 			return (rVal >= 0 && rVal < row && cVal >= 0 && cVal < col);
 		}
 		
+		//Updating the grid after a tick or time event passed.
 		void updationAfterInput() {
 			for(int row = 0; row < numberOfRows; row++) {
 				for(int col = 0; col < numberOfCols; col++) {
@@ -72,6 +76,7 @@ class liveOrDead {
 			}
 		}
 		
+		//Printing the grid.
 		void print_OrthogonalMatrix() {
 			for(int row = 0; row < numberOfRows; row++) {
 				for(int col = 0; col < numberOfCols; col++) {
@@ -81,11 +86,14 @@ class liveOrDead {
 			}
 		}
 		
+		//Printing changes happened at that instance of tick.
 		void printChanges() {
 			for(int i = 0; i < changes.size(); i++) {
 				cout<<"x-coordinate: "<<changes[i].first.first<<": y-coordinate: "<<changes[i].first.second<<": changed to:"<<changes[i].second<<"\n";
 			}
 		}
+		
+		//Printing state of particular cell desired by the user.
 		void stateOfParticularCell(int x_coordinate, int y_coordinate) {
 			cout<<orthogonal_grid[x_coordinate][y_coordinate];
 		}
@@ -107,6 +115,7 @@ int main() {
 	cout<<"\nPress 3: To Print the current value of the specific cell. X and Y coordinates required. Range->1 to 25. \n";
 	cout<<"\nPress 4: To Exit.\n";
 	
+	//Menu option to access all different scenarios.
 	do {
 		cout<<"Enter your choice: \n";
 		cin>>input;
