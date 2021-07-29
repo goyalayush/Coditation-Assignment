@@ -166,4 +166,6 @@ int main() {
 				break;
 		}
 	}while(input < 4 && input >= 1);
+	
+	return 0;
 }
