@@ -22,10 +22,10 @@ This is a program in Cpp(C plus plus) with following guidelines:
 5. The program ends on termination or chosing option 4.
 
 
-#Instructions on building and running:
+# Instructions on building and running:
 
-#Building:
+# Building:
 The program have a .cpp extension file which can be compiled using any IDE to generate an executable file.
 
-#Running:
+# Running:
 The executable file can be run simply by double clicking on it or opening it in CLI.
