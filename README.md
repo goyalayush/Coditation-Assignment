@@ -20,3 +20,11 @@ This is a program in Cpp(C plus plus) with following guidelines:
 3. The program output the state of the cells and changes (0 for Dead and 1 for Alive).
 4. The program provides a way to search by the coordinates of the cell and show the current state of the cell.
 5. The program ends on termination or chosing option 4.
+
+
+Instructions on building and running:
+Building:
+The program have a .cpp extension file which can be compiled using any IDE to generate an executable file.
+
+Running:
+The executable file can be run simply by double clicking on it or opening it in CLI.
